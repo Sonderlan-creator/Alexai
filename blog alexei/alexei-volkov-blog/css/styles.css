@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #ff0000);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.banner {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+nav.menu {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 10px;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu ul li {
+    margin: 0 15px;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav.menu ul li a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.introduction, .container {
+    padding: 40px 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.podervolk {
+    size: 100px;
+    border-radius: 20%;
+    margin-top: 20px;
+    object-fit:cover;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    
+
+   
+
+}
+
+.introduction.right, .container.right {
+    text-align: right;
+}
+
+.introduction.left, .container.left {
+    text-align: left;
+}
+
+.introduction p, .container p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.introduction ul, .container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.introduction ul li, .container ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .introduction p, .container p {
+        font-size: 1em;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+    }
+
+    nav.menu ul li {
+        margin: 10px 0;
+    }
+
+    .introduction, .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
